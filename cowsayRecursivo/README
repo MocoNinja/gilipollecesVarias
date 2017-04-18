@@ -1,1 +1,8 @@
+Este programa (por llamarlo de alguna manera), toma una cadena de texto y un número.
+Mediante figlet, una vaca dirá ese texto, y un número de vacas la citarán.
+Todo está adornado con el maravilloso lolcat.
+Por eso se requiere COWSAY; FIGLET; LOLCAT;
 
+TODO
+
+Meter parámetros opcionales para jugar con las opciones del cowsay
