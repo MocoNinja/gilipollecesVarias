@@ -5,21 +5,21 @@ void punteros_intro()
 {
     int numero = 10;
     int* direccion = &numero;
-    printf("El numero es %d y su direccion es %p.\n", numero, direccion);
+    printf("El número es %d y su dirección es %p.\n", numero, direccion);
 }
 
 void funcion_normal(int numero)
 {
-    printf("Esta funcion toma como paramentro un int numero");
-    printf("Se me ha pasado el numero %d.\n", numero);
+    printf("Esta función toma como paramentro un entero: 'funcion(int numero)'.\n");
+    printf("Se me ha pasado el numero: numero = %d.\n", numero);
     numero *= 2;
-    printf("Voy a duplicar su valor localmente, quedando %d.\n", numero);
+    printf("Voy a duplicar su valor localmente, quedando: numero = %d.\n", numero);
 }
 
 void funcion_punteros(int* puntero)
 {
-    printf("Esta funcion toma como paramentro un puntero int* puntero");
-    printf("Se puede acceder al numero usando *puntero, quedando: numero %d.\n", *puntero);
+    printf("Esta función toma como paramentro un puntero: 'funcion(int* puntero)'.\n");
+    printf("Se puede acceder al numero usando *puntero, quedando: *puntero = %d.\n", *puntero);
     *puntero *= 2;
     printf("Despues de multiplicar por 2, queda que *puntero =  %d.\n", *puntero);
 
@@ -33,7 +33,7 @@ int main(int argc, char** argv)
     funcion_normal(numero);
     printf("Al volver a main, numero vale %d.\n", numero);
     printf("--------------------------------------------\n");
-    printf("Ahora ejecuto la misma funcion, pero con punteros, pasandole &numero");
+    printf("Ahora ejecuto la misma funcion, pero con punteros, pasandole &numero...\n\n");
     funcion_punteros(&numero);
     printf("Al volver a main, numero vale %d.\n", numero);
     return (EXIT_SUCCESS);
